@@ -67,6 +67,7 @@ namespace CdkApp
             {
                 Runtime = Runtime.DOTNET_8,
                 FunctionName = "s3Lambda",
+                Timeout = Duration.Seconds(20),
                 //Where to get the code
                 Code = Code.FromAsset("Lambdas\\src\\Lambdas\\bin\\Debug\\net8.0"),
                 Handler = "Lambdas::Lambdas.Function::S3LambdaHandler",
